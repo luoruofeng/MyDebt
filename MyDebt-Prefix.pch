@@ -1,0 +1,60 @@
+//
+// Prefix header for all source files of the 'MyDebt' target in the 'MyDebt' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h> 
+    #import "UIColor+ColorUtils.h"
+    #import "NSDate+DateUtil.h"
+    #import "UIView-ViewFrameGeometry.h"
+    #import "UIView-TagExtensions.h"
+#endif
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define ROW_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define APPLICATION_FRAME [[UIScreen mainScreen] applicationFrame]
+
+#define KEY_WINDOW [[UIApplication sharedApplication] keyWindow]
+#define KEY_WINDOW_FRAME [[[UIApplication sharedApplication] keyWindow] frame]
+#define FONT_FAMILY @"华文黑体"
+
+#define USER_DEFAULTS [NSUserDefaults standardUserDefaults]
+
+#define CONFIGE_PASSWORD @"config_pw"
+#define CONFIGE_USE_PASSWORD @"config_use_pw"
+#define CONFIGE_NOTIFICATION @"config_notificat"
+#define CONFIGE_USE_NOTIFICATION @"config_use_notificat"
+
+#define CURRENT_MAX_PAY_ITEM_ID @"currentMaxPayItemId"
+
+typedef NS_ENUM (NSInteger, PayItemPayType) {
+    PayItemPayTypeReceivable,
+    PayItemPayTypePayable,
+    PayItemPayTypeReceivableDid,
+    PayItemPayTypePayableDid
+};
+
+#define DICTIONARY_PAYABLE @"PayItemPayTypePayable"
+#define DICTIONARY_RECEIVABLE @"PayItemPayTypeReceivable"
+#define DICTIONARY_RECEIVABLE_DID @"PayItemPayTypeReceivableDid"
+#define DICTIONARY_PAYABLE_DID @"PayItemPayTypePayableDid"
+
+
+#define DICTIONARY_ALL_PAYABLE @"allPayItemPayTypePayable"
+#define DICTIONARY_ALL_RECEIVABLE @"allPayItemPayTypeReceivable"
+
+#define FIRST_USE_APP @"firstUseApp"
+
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define TO_GRADE @""
+#define ABOUT_ME @"http://www.likepeak.com"

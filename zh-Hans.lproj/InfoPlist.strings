@@ -1,0 +1,8 @@
+{
+	"icon files" = (
+		"Icon.png",
+		"Icon-Small.png",
+		"Icon@2x.png",
+		"Icon-Small@2x.png",
+	);
+}
