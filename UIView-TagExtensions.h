@@ -11,6 +11,7 @@
 #endif
 
 @interface UIView (TagExtensions)  
+@interface UIView (TagExtensions)    
 - (UIAlertView *) alertViewWithTag: (NSInteger) aTag;
 - (UIActionSheet *) actionSheetWithTag: (NSInteger) aTag;
 - (UITableView *) tableViewWithTag: (NSInteger) aTag;
